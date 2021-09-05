@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>hire me</title>
+	<link rel="stylesheet" type="text/css" href="hire.css">
+</head>
+<body>
+	<h1 class="owner">Amir Shahzad</h1>
+	<div class="contact">
+	<div class="text">
+	<form>
+		<h1 class="head" id="contact"> Enter Project <span>Detail</span></h1>
+		<input type="text" name="" placeholder="Enter your name">
+		<input type="email" name="" placeholder="Enter your e-mail">
+		<input type="text" name="" placeholder="Enter Project Type">
+		<label>Delivery Days:</label>
+		<select>
+			<option>1 day</option>
+			<option>2days</option>
+			<option>4days</option>
+			<option>5days</option>
+			<option>more than 5 days</option>
+			
+		</select>
+		<label>Enter Your Budget:</label>
+		<select>
+			<option>$5</option>
+			<option>$10</option>
+			<option>$15</option>
+			<option>$20</option>
+			<option>$25</option>
+			
+		</select>
+		<textarea placeholder="Enter project Description"></textarea>
+		<button class="end">Submit</button>
+	</form>
+	</div>
+</div>
+<footer class="foot">
+
+	<div class="social">
+						<a href="#"><img src="fa.png"></a>
+						<a href="#"><img src="twi.png"></a>
+						<a href="#"><img src="li.png"></a>
+					</div>
+</footer>
+<script type="text/javascript">
+	const submit=document.querySelector('.end');
+	submit.addEventListener('click' , function(){
+	alert('Project Detail is successfully submitted. Wait for responce');
+});
+</script>
+</body>
+</html>

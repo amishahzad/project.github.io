@@ -1,0 +1,491 @@
+
+@import "utilities.css";
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+  
+
+}
+header{
+	background: black;
+	height: 565px;
+	margin: 0px auto;
+	clip-path: polygon(0 0,100% 0, 100% 100%, 75% 87%,0 100%);
+}
+header nav .left .logo img{
+	max-height: 60px;
+	color: white;
+}
+
+.container{
+	max-width: 1152px;
+	padding: 0 15px;
+	display: block;
+}
+header nav .left a{
+	color: white;
+	text-decoration: none;
+	margin-right: 3rem;
+	text-transform: uppercase;
+}
+header nav .left a:hover{
+	color: #E3B778;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 5rem;
+
+
+}
+nav .left{
+	display: flex;
+	align-items: center;
+}
+header nav .logo{
+	margin-right: 3rem;
+}
+.btn{
+	padding: 0.8rem 3rem;
+	font-weight: 600;
+	border: 2px solid transparent;
+	outline: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.btn-primary{
+	background: #E3B778;
+	color: black;
+	cursor: pointer;
+}
+.btn-primary:hover{
+	background: transparent;
+	border-color: white;
+	color: white;
+}
+.hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.hero .right{
+	color: white;
+margin-top: -3rem;
+
+}
+.hero .right h6{
+	font-size: 1.2rem;
+	color: #E3B778;
+	margin-bottom: 0.6rem;
+}
+.hero .right h1{
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-bottom: 0.8rem;
+	font-weight: 100;
+}
+.hero .right h1 span{
+	color: #E3B778;
+}
+.hero .right p{
+	margin-right: 4rem;
+	margin-bottom: 0.8rem;
+}
+.btn-secondary{
+	background: transparent;
+	color: white;
+	border-color: white;
+	cursor: pointer;
+
+}
+.btn-secondary:hover{
+	background: whitesmoke;
+	color: black;
+	
+}
+.about .me{
+	display: flex;
+	justify-content: space-between;
+	justify-content: center;
+
+
+}
+.about{
+	margin: 8rem 9rem;
+	height: 40rem;
+	justify-content: center;
+
+}
+.about .me .mee img{
+	margin-right: 4rem;
+	height: 320px;
+}
+
+.about .me .social a img{
+	
+	height: 30px;
+	width: 50px;
+	float: right;
+
+
+}
+.about .me .social{
+	display: flex;
+
+
+	
+}
+
+.about .me .social a{
+	padding: 0.4rem;
+	}
+	.about .me h1{
+		text-transform: uppercase;
+		margin-bottom: 0.7rem;
+		font-weight: 300;
+		font-size: 2rem;
+	}
+	.about .me h1 span{
+		color: #E3B778;
+	}
+	.about .me h3{
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+		font-weight: 400;
+		font-size: 1.4rem;
+	}
+	.about .me p{
+		color: #E3B778;
+		font-weight: 100;
+		margin-bottom: 1rem;
+	}
+	.contain-heading{
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 1rem;
+		font-size: 2rem;
+	}
+	.contain-heading span{
+		color: #E3B778;
+	}
+	.contain-heading +p{
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 3rem;
+
+	}
+	.service .rapper .card img{
+		width: 4rem;
+		height: 4rem;
+		position: absolute;
+		top: -2rem;
+		left: 47%;
+		transform: translateX(-50%);
+	}
+	.service .rapper{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		grid-column-gap: 2rem;
+	}
+	.service{
+		margin: 2rem 3rem;
+		margin-top: -21rem;
+		background: 	#EDEAE0;
+		padding: 0 3rem;
+		padding-bottom: 3rem;
+	}
+	.service .rapper .card{
+		background: ghostwhite;
+		padding: 3rem 2rem;
+		position: relative;
+	}
+	.service .rapper .card h2{
+		text-align: center;
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+	.service .rapper .card p{
+		text-align: center;
+		font-size: 0.8rem;
+	}
+	.free{
+		text-align: center;
+		background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(camera.png);
+		color: white;
+		padding: 4rem 0;
+		clip-path: polygon(0 0,100% 0, 100% 100%, 75% 87%,0 100%);
+	}
+	.free h1{
+		font-weight: 300;
+		margin-bottom: 0.6rem;
+		text-transform: uppercase;
+	}
+	.free p{
+		font-weight: 100;
+		margin-bottom: 2rem;
+		font-size: 1rem;
+
+	}
+	.work .rapper{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		text-align: center;
+		padding: 2rem 1rem;
+
+	}
+	.work .rapper .card img{
+		width: 15rem;
+		height: 15rem;
+	}
+	.work{
+		background: #EDEAE0;
+		margin: 4rem 2rem;
+	}
+	@media(max-width: 1210px){
+		header #main-nav{
+			display: none;
+		}
+		
+	}
+	.site-main{
+		position: relative;
+	}
+	.hamberger{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		z-index: 12;
+		background: none;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		display: none;
+	}
+	.hamberger img{
+		width: 45px;
+		height: 30px;
+		background: none;
+	}
+	.mobile-nav{
+		position: fixed;
+		z-index: 1000;
+		background: #2f3542;
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 3rem;
+		padding-top: 7rem;
+		transform: translateX(-100%);
+		transition: all .5s ease-in-out;
+		font-weight: 200;
+		text-align: center;
+			}
+			mobile-nav:hover{
+				text-decoration: underline;
+			}
+			.mobile-nav button{
+				padding: 0.5rem 1rem;
+				margin-top: 1rem;
+			}
+		.open{
+			transform: translateX(0%);
+
+		}
+		
+			.mobile-nav ul li {
+				list-style-type: none;
+
+			}
+			.mobile-nav ul li a{
+				font-size: 1.7rem;
+				color: white;
+				text-decoration: none;
+				font-weight: 3px;
+			}
+			.close{
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				pointer: curser;
+
+			}
+			.close img{
+				width: 40px;
+				height: 40px;
+			}
+			@media(min-width: 576px){
+				.container{
+					max-width: 540px;
+				}
+			}
+			@media(min-width: 668px){
+				.container{
+					max-width: 720px;
+				}
+			}
+			@media(min-width: 992px){
+				.container{
+					max-width: 960px;
+				}
+			}
+			@media(min-width: 1200px){
+				.container{
+					max-width: 1152px;
+				}
+			}
+			
+			@media(max-width: 991px){
+				.hero .right{
+					margin-top: 3rem;
+
+				}
+				.hamberger{
+			display: block;
+		}
+				.hero .right h1{
+					font-size: 2rem;
+					margin-right: -21px;
+				}
+				.hero .right p{
+					margin-right: -10rem;
+					font-size: 1rem;
+				}
+				.hero .left img{
+					width: 25rem;
+					margin-top: 4rem;
+				}
+				header{
+					clip-path: polygon(0 0,100% 0, 100% 86%, 19% 80%,0 86%);
+				}
+				.about .me h1{
+					font-size: 1.5rem;
+				}
+				.about .me h3{
+					font-size: 1.2rem;
+				}
+
+				.service .contain-heading{
+					font-size: 1.5rem;
+				}
+				.service .contain-heading +p{
+					font-size: 0.7rem;
+				}
+				.service .rapper {
+					
+					grid-template-columns: 1fr;
+					grid-row-gap: 3rem;
+				}
+				.contact .text input{
+					padding: 0.3rem 0;
+
+				}
+				.contact .text textarea{
+					height: 4rem;
+				}
+				.contact .text button{
+					padding: 0.2rem 0.7rem;
+				}
+
+			}
+			.contact
+			{
+				background: #2c3e50;
+			}
+			.contact .text{
+				text-align: center;
+				margin: 0 25rem;
+				padding: 2rem 0;
+				background: #2c3e50;
+				overflow: hidden;
+
+			}
+			.contact .text input{
+				display: block;
+				outline: none;
+				width: 100%;
+				margin: 1rem 0;
+				padding: 0.6rem 0;
+				background: #dfe6e9;
+				
+				border: none;
+			}
+			.contact .text input:hover{
+				box-shadow: 0 0 3px 3px whitesmoke;
+			}
+			.contact .text textarea{
+				display: block;
+				outline: none;
+				width: 100%;
+				height: 6rem;
+				margin-bottom: 1rem;
+				background: #dfe6e9;
+				
+				border: none;
+			}
+			.contact .text textarea:hover{
+				box-shadow: 0 0 3px 3px whitesmoke;
+			}
+			.contact .text button{
+				padding: 0.6rem 2rem;
+				background: #dfe6e9;
+				border: none;
+				outline: none;
+				color: #1B1464;
+				float: right;
+			}
+			.contact .text button:hover{
+				font-size: 1rem;
+				background: transparent;
+				color: whitesmoke;
+				border: 2px solid white;
+			}
+			.head span{
+
+					color: #E3B778;
+					padding: 1rem 0;
+					
+			}
+			.head{
+				margin-bottom: 2rem;
+			}
+			.foot .social a img{
+	
+	height: 50px;
+	width: 70px;
+	float: right;
+	padding: 0 1rem;
+
+
+
+}
+.foot .social{
+	display: flex;
+justify-content: center;
+background-color: black;
+padding: 1rem;
+
+
+	
+}
+.foot{
+	background: black;
+}
+
+
+		
+
+
+			
+			
+
+
+
+
